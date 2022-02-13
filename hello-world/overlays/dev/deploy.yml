@@ -5,9 +5,11 @@ metadata:
     app: hello-world
   name: hello-world
 spec:
+  template:
     spec:
       containers:
-        - livenessProbe:
+        - name: hello-world
+          livenessProbe:
             httpGet:
               port: 9000
               path: /healthz
