@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/emmanuel-apau/gitops-helloworld
     targetRevision: HEAD
-    path: hello-world/overlays/dev
+    path: hello-world/overlays/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: prod
