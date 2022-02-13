@@ -4,7 +4,7 @@ metadata:
   name: hello-world
   namespace: argocd
 spec:
-  project: default
+  project: dev
 
   source:
     repoURL: https://github.com/emmanuel-apau/gitops-helloworld
