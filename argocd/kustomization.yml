@@ -5,6 +5,7 @@ namespace: argocd
 resources:
   - namespace.yml
   - https://raw.githubusercontent.com/argoproj/argo-cd/v2.2.5/manifests/install.yaml
-  - project.yml
-  - apps.yml
+  - project-dev.yml
+  - project-prod.yml
+  - apps/hello-world
   - app-argocd.yml

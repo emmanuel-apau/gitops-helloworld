@@ -8,8 +8,8 @@ resources:
 patchesStrategicMerge:
   - deploy.yml
 
-namePrefix: dev-
-namespace: dev
+namePrefix: prod-
+namespace: prod
 replicas:
   - name: hello-world
-    count: 1
+    count: 2

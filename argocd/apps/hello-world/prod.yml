@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-world-prod
+  namespace: argocd
+spec:
+  project: prod
+
+  source:
+    repoURL: https://github.com/emmanuel-apau/gitops-helloworld
+    targetRevision: HEAD
+    path: hello-world/overlays/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: prod
+
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=false
+
+    automated:
+      selfHeal: true
+      prune: true
