@@ -7,3 +7,4 @@ resources:
   - https://raw.githubusercontent.com/argoproj/argo-cd/v2.2.5/manifests/install.yaml
   - project.yml
   - apps.yml
+  - app-argocd.yml
