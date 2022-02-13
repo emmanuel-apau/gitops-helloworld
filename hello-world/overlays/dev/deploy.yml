@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: hello-world
+  name: hello-world
+spec:
+    spec:
+      containers:
+        - livenessProbe:
+            httpGet:
+              port: 9000
+              path: /healthz
+            initialDelaySeconds: 2
+            periodSeconds: 2
