@@ -7,4 +7,3 @@ commonLabels:
 resources:
   - deploy.yml
   - svc.yml
-  - argo.yml
